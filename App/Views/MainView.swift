@@ -6,7 +6,7 @@
 import SwiftUI
 
 struct MainView: View {
-    let todayPlan = ReadingPlan.defaultPlan()
+    let todayPlan = ReadingPlan.generatePlan(for: Date())
 
     var body: some View {
         NavigationView {
